@@ -1,0 +1,143 @@
+/* Fullscreen background setup */
+.fullscreen-home {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background image filling entire screen */
+.background-image {
+    background-image: url("images/billy.jpeg"); /* replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+/* Overlay text and nav positioning */
+.overlay-text {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 15%;
+}
+
+.overlay-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Nav buttons below title */
+.nav-buttons {
+    margin-top: 1.5rem;
+}
+
+.nav-button {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #1b1b1b;
+    padding: 0.6rem 1.2rem;
+    margin: 0 0.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #c0c0c0;
+}
+
+.nav-button:hover {
+    background-color: #c0c0c0;
+}
+
+/* Header stays clean and spaced */
+header {
+    background-color: rgba(46, 125, 50, 0.95);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gallery {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #e8f5e9; /* soft green background */
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2e7d32;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery-grid img {
+    width: 350px;  /* increased from 300px */
+    height: 350px; /* increased from 300px */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8f5e9;
+    gap: 2rem;
+}
+
+.contact-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.contact-text h2 {
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+.contact-text p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.contact-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.contact-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
